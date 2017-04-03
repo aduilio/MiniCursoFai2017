@@ -2,7 +2,7 @@
 
     <CheckBoxPreference
         android:defaultValue="true"
-        android:key="verify_volume"
+        android:key="vibrate"
         android:summary="@string/vibrate_device_info"
         android:title="@string/vibrate_device" />
 

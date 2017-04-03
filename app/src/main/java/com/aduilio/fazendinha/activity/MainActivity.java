@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Vibrator;
+import android.preference.PreferenceManager;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
@@ -19,12 +20,16 @@ public class MainActivity extends AppCompatActivity {
     private MediaPlayer player;
     private Vibrator vibrator;
 
+    private boolean vibrate;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
         vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
+
+        vibrate = PreferenceManager.getDefaultSharedPreferences(this).getBoolean("vibrate", true);
 
         ImageView porco = (ImageView) findViewById(R.id.iv_main_porco);
         porco.setOnClickListener(new View.OnClickListener() {
@@ -86,5 +91,10 @@ public class MainActivity extends AppCompatActivity {
     private void playSound(int sound) {
         player = MediaPlayer.create(this, sound);
         player.start();
+
+        if (vibrate) {
+            long[] pattern = {50, 100, 50, 100};
+            vibrator.vibrate(pattern, -1);
+        }
     }
 }
