@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Fazendinha</string>
+    <string name="vibrate_device">Vibrar</string>
+    <string name="vibrate_device_info">Vibrar o dispositivo quando toca o som</string>
 </resources>
