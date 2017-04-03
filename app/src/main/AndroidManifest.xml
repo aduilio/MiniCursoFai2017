@@ -1,6 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
 
-    package="fazendinha.aduilio.com.fazendinha">
+    package="com.aduilio.fazendinha">
 
     <application
         android:allowBackup="true"
