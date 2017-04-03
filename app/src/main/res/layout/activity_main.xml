@@ -21,10 +21,12 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
                 android:layout_weight="1"
+                android:background="@drawable/selector_main_icon"
                 android:clickable="true"
                 android:onClick="onVacaClick"
-                android:scaleType="centerCrop"
-                android:src="@mipmap/ic_launcher" />
+                android:padding="10dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/vaca" />
 
             <ImageView
                 android:layout_width="0dp"
@@ -32,10 +34,12 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
                 android:layout_weight="1"
+                android:background="@drawable/selector_main_icon"
                 android:clickable="true"
                 android:onClick="onPeruClick"
-                android:scaleType="centerCrop"
-                android:src="@mipmap/ic_launcher" />
+                android:padding="10dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/peru" />
 
         </LinearLayout>
 
@@ -51,18 +55,22 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
                 android:layout_weight="1"
-                android:scaleType="centerCrop"
-                android:src="@mipmap/ic_launcher" />
+                android:background="@drawable/selector_main_icon"
+                android:padding="10dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/porco" />
 
             <ImageView
-                android:id="@+id/iv_main_carneiro"
+                android:id="@+id/iv_main_pato"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
                 android:layout_weight="1"
-                android:scaleType="centerCrop"
-                android:src="@mipmap/ic_launcher" />
+                android:background="@drawable/selector_main_icon"
+                android:padding="10dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/pato" />
 
         </LinearLayout>
 
