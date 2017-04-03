@@ -16,29 +16,15 @@
             android:layout_marginTop="20dp">
 
             <ImageView
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                android:layout_weight="1"
-                android:background="@drawable/selector_main_icon"
+                style="@style/ImageMainIcons"
                 android:clickable="true"
                 android:onClick="onVacaClick"
-                android:padding="10dp"
-                android:scaleType="centerInside"
                 android:src="@drawable/vaca" />
 
             <ImageView
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                android:layout_weight="1"
-                android:background="@drawable/selector_main_icon"
+                style="@style/ImageMainIcons"
                 android:clickable="true"
                 android:onClick="onPeruClick"
-                android:padding="10dp"
-                android:scaleType="centerInside"
                 android:src="@drawable/peru" />
 
         </LinearLayout>
@@ -50,26 +36,12 @@
 
             <ImageView
                 android:id="@+id/iv_main_porco"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                android:layout_weight="1"
-                android:background="@drawable/selector_main_icon"
-                android:padding="10dp"
-                android:scaleType="centerInside"
+                style="@style/ImageMainIcons"
                 android:src="@drawable/porco" />
 
             <ImageView
                 android:id="@+id/iv_main_pato"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                android:layout_weight="1"
-                android:background="@drawable/selector_main_icon"
-                android:padding="10dp"
-                android:scaleType="centerInside"
+                style="@style/ImageMainIcons"
                 android:src="@drawable/pato" />
 
         </LinearLayout>
