@@ -2,6 +2,7 @@ package com.aduilio.fazendinha.activity;
 
 import android.content.Context;
 import android.content.Intent;
+import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Vibrator;
@@ -27,8 +28,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
+        setVolumeControlStream(AudioManager.STREAM_MUSIC);
 
+        vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
         vibrate = PreferenceManager.getDefaultSharedPreferences(this).getBoolean("vibrate", true);
 
         ImageView porco = (ImageView) findViewById(R.id.iv_main_porco);
