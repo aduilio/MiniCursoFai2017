@@ -31,7 +31,6 @@ public class MainActivity extends AppCompatActivity {
         setVolumeControlStream(AudioManager.STREAM_MUSIC);
 
         vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
-        vibrate = PreferenceManager.getDefaultSharedPreferences(this).getBoolean("vibrate", true);
 
         ImageView porco = (ImageView) findViewById(R.id.iv_main_porco);
         porco.setOnClickListener(new View.OnClickListener() {
@@ -48,6 +47,13 @@ public class MainActivity extends AppCompatActivity {
                 playSound(R.raw.pato);
             }
         });
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+
+        vibrate = PreferenceManager.getDefaultSharedPreferences(this).getBoolean("vibrate", true);
     }
 
     @Override
